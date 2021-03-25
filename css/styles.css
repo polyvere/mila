@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth; 
+}
+
+section{
+  padding: 100px; 
+  }
+
+.banner{
+  position: relative;
+  min-height: 100vh;
+  background: url(1.jpg);
+  background-size: cover;
+  background-position: right;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* section{
+padding: 100px; 
+} */
+
+.banner h2{
+  font-size: 3em;
+  color: #74283E;
+  font-weight: 700;
+  line-height: 1.5em;
+}
+.banner h2 span,
+header .logo span,
+.heading h2 span{
+  color: #9CA96C;
+}
+.banner h3{
+  font-size: 1.5em;
+  color: #9CA96C;
+  font-weight: 500;
+}
+.btn{
+  position: relative;
+  background: #74283E;
+  display: inline-block;
+  color: #fff;
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s
+}
+header.sticky{
+  background: #fff;
+  padding: 20px 100px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+header .logo{
+  color: #74283E;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+header ul{
+  position: relative;
+  display: flex;
+}
+
+header ul li{
+  position: relative;
+  list-style: none;
+}
+
+header ul li a{
+  position: relative;
+  display: inline-block;
+  margin: 0 15px;
+  color: #000;
+  text-decoration: none;
+}
+
+.heading{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #111;
+}
+.heading h2{
+  font-weight: 600;
+  font-size: 30px;
+  color:  #74283E;
+}
+
+.content{
+  display: flex;
+  justify-content: space-between;
+}
+.contentBx{
+  padding-right: 30px;
+}
+.contentBx h3{
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.content h3,
+.content p{
+  padding-top: 25px;
+}
+
+.w50{
+  min-width: 50%;
+}
+.servicesBx img{
+  width: 250px;
+  height: 150px;
+}
+
+.servicesBx h2{
+  padding-top: 25px;
+}
+
+
+.services .content{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.services .content .servicesBx{
+  padding: 40px 20px;
+  max-width: 340px;
+  margin: 20px;
+  text-align: center;
+}
+
+.testimonial{
+  background: #D7DD9D;
+}
+.testimonial .content{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.testimonial .content .testimonialBx{
+  max-width: calc(50% - 40px);
+  padding: 60px 40px;
+  margin: 20px;
+}
+
+.testimonial .content .testimonialBx p{
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 300;
+}
+.testimonial .content .testimonialBx h3{
+  margin-top: 40px;
+  text-align: end;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1em;
+}
+.testimonial .content .testimonialBx h3 span{
+  font-size: 14px;
+  font-weight: 400;
+}
+.contact {
+  
+  height: 100vh;
+  display: grid;
+  background: url(../images/2.jpg)
+  /* align-items: center; */
+}
+
+.contact-wrap {
+  
+  width: 100%-40px;
+  height: auto;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-in {
+  padding: 30px 140px 40px 30px;
+ 
+
+}
+
+.contact-in a {
+  text-decoration: none;
+  color: #000;
+}
+
+.contact-in:nth-child(1) {
+  flex: 20%;
+  color: #000;
+}
+
+.contact-in:nth-child(2) {
+  flex: 30%;
+  padding: 0;
+
+}
+
+.contact-in h1 {
+  font-size: 24px;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.contact-in h3 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.contact-in h3 i {
+  font-size: 16px;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  background: #f5f5f5;
+  color: #000;
+  border-radius: 50px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.contact-in p {
+  /* font-size: 14px; */
+  font-weight: 300;
+  margin-bottom: 30px;
+  line-height: 1.5;
+  
+}
+
+.contact-in ul {
+  padding: 0;
+  margin: 0;
+}
+
+.contact-in ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.contact-in ul li a {
+  display: block;
+  /* width: 30px; */
+  height: 30px;
+  text-align: center;
+  background: #000;
+  border-radius: 50px;
+}
+
+.contact-in ul li a i {
+  font-size: 14px;
+  line-height: 30px;
+  color: #000;
+}
+.contact-in img{
+  width: 100%;
+}
+
+.copyright {
+  font-size: 10px;
+  margin-top: 90px;
+}
+
+.contactForm{
+  width: 40%;
+  padding: 40px;
+  background: #fff;  
+  height: 525px;
+
+}
+.contactForm h2{
+  font-size: 30px;
+  color:#333;
+  font-weight: 500;
+}
+.contactForm .inputBox{
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+.contactForm .inputBox span{
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span{
+  color: #e91e63;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"]{
+  width: 100px;
+  background: #D7DD9D;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
+
+
+
+
+@media (max-width: 991px){
+  
+  header,
+  header.sticky{
+    padding: 20px 50px;
+    z-index: 1000;
+  }
+  
+  .menu{
+    position: fixed;
+    top: 75px;
+    left: -100%;
+    display: block;
+    padding: 100px 50px;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    transition: 0.5s;
+    z-index: 999;
+    border-top: 1px solid rgba(0,0,0,0.2);
+  }
+
+  .menu.active{
+    left: 0;
+  }
+
+  header ul li a{
+    color: #74283E;
+    font-size: 24px;
+    margin: 10px;
+  }
+  .toggle{
+    width: 40px;
+    height: 40px;
+    background: url(../images/menu.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    cursor: pointer;
+  }
+
+  .toggle.active{
+    background: url(../images/close.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    cursor: pointer;
+  }
+
+  header.sticky .toggle{
+    filter: invert(1);
+  }
+
+  section{
+    padding: 100px 50px;
+  }
+  .banner{
+    padding: 290px 50px 100px;
+  }
+  /* .banner h2{
+    font-size: 1.5em;
+  } */
+  .banner h3{
+    font-size: 1.5em;
+  }
+  .btn{
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  .heading h2{
+    font-size: 24px;
+  }
+  .content{
+    flex-direction: column;
+  }
+  .services .content .servicesBx{
+    margin: 10px;
+  }
+  .testimonial .content .testimonialBx{
+    max-width: calc(100% - 20px);
+    padding: 0px 20px;
+    /* margin: 10px; */
+  }
+  .contact{
+    flex-direction: column;
+  }
+  .contact-in img{
+  }
+  .contactForm{
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px){
+  header,
+  header.sticky{
+    padding: 20px 20px;
+  }
+  .banner{
+    padding: 290px 5px 100px;
+  }
+  section{
+    padding: 100px 20px;
+  }
+}
